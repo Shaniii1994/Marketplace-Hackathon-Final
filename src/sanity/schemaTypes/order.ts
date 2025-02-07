@@ -52,8 +52,8 @@ export default {
             of : [{type : 'reference', to : {type : 'product'}}]
         },
         {
-            name : 'total',
-            title : 'Total',
+            name : 'subTotal',
+            title : 'SubTotal',
             type : 'number',
         },
         {

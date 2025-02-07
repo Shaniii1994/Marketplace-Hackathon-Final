@@ -6,6 +6,7 @@ import Swal from 'sweetalert2'
 import Image from 'next/image'
 import { urlFor } from '@/sanity/lib/image'
 import { useRouter } from 'next/navigation'
+import { Product } from '../components/Hero'
 
 const CartPage = () => {
 

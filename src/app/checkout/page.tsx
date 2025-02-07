@@ -7,6 +7,7 @@ import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
 import { CgChevronRight } from 'react-icons/cg';
 import Image from 'next/image';
+import { Product } from '../components/Hero';
 
 export default function CheckOut() {
 
@@ -108,7 +109,7 @@ export default function CheckOut() {
           _type : 'reference',
           _ref : item._id
         })),
-        total : total,
+        subTotal : subTotal,
         discount : discount,
         orderDate : new Date().toISOString
         };
