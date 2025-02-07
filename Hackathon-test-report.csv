@@ -1,0 +1,9 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate Home Page Loading,Open Home Page,All components and content should load properly,Page loads with all components as expected,Passed,High,-,Working as intended
+TC002,Test Featured Products Component,View Featured Products section on Home Page,Products display from Sanity,Featured products displayed correctly,Passed,Medium,-,Sanity integration working
+TC003,Test Latest Products Component,View Latest Products section,Should show products sorted by addition date,Latest products displayed in correct order,Passed,Medium,-,Date sorting working
+TC023,Clerk Sign-In API Integration,Test sign-in API endpoint with valid credentials,Should return valid session token and user data,Authentication successful with valid token,Passed,Medium,-,API response time < 2s
+TC024,Clerk Sign-Out API,Test sign-out functionality,Should invalidate session and clear user data,Session terminated successfully,Passed,High,-,Clean logout achieved
+TC025,Stripe Webhook Integration,Test webhook for successful payment,Should update order status in Sanity,Order status updated correctly,Passed,Medium,-,Webhook functioning
+,,,,,,,-,
+,,,,,,,-,
