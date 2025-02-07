@@ -5,6 +5,9 @@ import { client } from "../../sanity/lib/client";
 import Image from "next/image";
 import { addToCart } from "../actions/actions";
 import Swal from "sweetalert2";
+import Banner from "@/app/components/banner";
+
+<Banner/>
 
 export interface Product {
   _id: string;
