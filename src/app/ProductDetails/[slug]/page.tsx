@@ -43,7 +43,7 @@ async function fetchProductDetails(_params: String) {
   return client.fetch(query, { });
 }
 
-const ProductDetailsPage = async({params}:PageProps)=> {
+const ProductDetailsPage = async({}:PageProps)=> {
   const router = useRouter();
   const { slug } = router.query;
 

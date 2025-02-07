@@ -7,7 +7,6 @@ import Link from "next/link";;
 import { addToCart } from "../actions/actions";
 import Swal from "sweetalert2";
 import ProductDetails from "../Product/[productdetails]/page";
-import Product from "../../../types/product";
 export interface Product {
   _id: string;
   name: string;
@@ -23,7 +22,7 @@ export interface Product {
   slug: {
     _type: 'slug';
     current: string;
-  };}
+  };}  
 
 async function fetchProducts() {
   const query = `*[_type == "product"] {
