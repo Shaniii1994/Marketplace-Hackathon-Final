@@ -7,7 +7,6 @@ import { addToCart } from "../actions/actions";
 import Swal from "sweetalert2";
 import Banner from "@/app/components/banner";
 
-<Banner/>
 
 export interface Product {
   _id: string;
@@ -25,7 +24,7 @@ export interface Product {
     _type: 'slug';
     current: string;
   };}
-
+<Banner/>
 async function fetchProducts() {
   const query = `*[_type == "product"] {
     _id,
