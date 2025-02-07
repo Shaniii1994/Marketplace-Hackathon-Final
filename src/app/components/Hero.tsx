@@ -3,10 +3,9 @@
 import { useEffect, useState } from "react";
 import { client } from "../../sanity/lib/client";
 import Image from "next/image";
-import Link from "next/link";;
 import { addToCart } from "../actions/actions";
 import Swal from "sweetalert2";
-import ProductDetails from "../Product/[productdetails]/page";
+
 export interface Product {
   _id: string;
   name: string;
@@ -22,7 +21,7 @@ export interface Product {
   slug: {
     _type: 'slug';
     current: string;
-  };}  
+  };}
 
 async function fetchProducts() {
   const query = `*[_type == "product"] {
@@ -136,16 +135,11 @@ function ProductListing() {
                   Stock Level: {product.stockLevel}
                 </p>
               
-                {/* Link to Product Details */}
-                <Link
-                  href={`/Productdetails/${ProductDetails}`}>
                  <button className="bg-gradient-to-r from-blue-600 to-sky-500 text-white mx-20 my-8 font-semibold mt-4 py-2 px-10 rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-200 ease-in-out"
                     onClick={(e) => handleAddToCart(e, product)}
                     >
                     Add To Cart
                     </button>
-                </Link>
-              
               </div>
             ))
           ) : (
@@ -155,9 +149,9 @@ function ProductListing() {
           )}
           
         </div>
-      )}
+      )};
     </div>
   );
-}
+};
 
 export default ProductListing;
